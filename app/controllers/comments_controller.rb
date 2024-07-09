@@ -21,6 +21,9 @@ class CommentsController < ApplicationController
   def edit
     respond_to do |format|
       format.html
+      format.js do
+        render template: "comments/edit"
+      end
     end
   end
 

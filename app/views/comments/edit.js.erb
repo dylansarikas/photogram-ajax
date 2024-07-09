@@ -1,0 +1,5 @@
+console.log("howdyss edit")
+
+var updated_comment = $("#<%= dom_id(@comment) %>").replaceWith("<%= j(render "comments/form", comment: @comment) %>");
+
+updated_comment.slideDown();
