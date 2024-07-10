@@ -1,1 +1,4 @@
 console.log("MAKE MAKE MAKE MAKE MAKE MAKE MAKE MAKE ");
+
+$(".<%=dom_id(@follow_request.recipient)%>_buns").replaceWith("<%= j(render "follow_requests/follow_unfollow", sender: @follow_request.sender, recipient: @follow_request.recipient) %>");
+
