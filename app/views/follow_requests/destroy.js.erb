@@ -1,0 +1,4 @@
+var unfollow_btn = $(".<%=dom_id(@follow_request.recipient)%>_<%=dom_id(@follow_request.sender)%>_form")
+var follow_btn = $("<%= j(render "follow_requests/follow_unfollow", sender: @follow_request.sender, recipient: @follow_request.recipient) %>");
+
+unfollow_btn.replaceWith(follow_btn);

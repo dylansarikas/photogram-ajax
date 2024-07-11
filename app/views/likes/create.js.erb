@@ -1,0 +1,4 @@
+var like = $("#<%=dom_id(@like.photo)%>_likes");
+var unlike = $("<%= j(render "photos/likes", photo: @like.photo) %>");
+
+like.replaceWith(unlike);
